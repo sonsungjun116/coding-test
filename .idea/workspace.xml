@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="커밋">
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679765838117</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="변경테스트">
+      <created>1679766144035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679766144035</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,7 +83,8 @@
     <MESSAGE value="그리디 알고리즘 - 회의실 배정" />
     <MESSAGE value="행렬" />
     <MESSAGE value="커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="커밋" />
+    <MESSAGE value="변경테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="변경테스트" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
