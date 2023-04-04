@@ -12,6 +12,7 @@ public class test_20230327 {
         int N = Integer.parseInt(br.readLine());
         int[]array1 = new int[N];
         int[]array2 = new int[N-2];
+        int[]max = new int[N-2];
         int bee1;
         int honey_box;
         int start_index;
@@ -57,11 +58,31 @@ public class test_20230327 {
         // honey_box의 위치는?
         //0인경우는 내림차순, N-1인경우는 오름차순
         if(box_index == 0){
-
+            for(int i = N-1; i <= 0;i--){
+                for(int j = N-1; j <= 0; j--){
+                    max[i] += array2[j];
+                }
+                for(int k = i-1;k <= 0 ; k++){
+                    max[i] += array2[k];
+                }
+                max[i] = max[i] - array2[i];
+            }
         }
         else if(box_index == N-1){
-
+            for(int i = 0; i < N-2;i++){
+                for(int j = 0; j < N-2; j++){
+                    max[i] += array2[j];
+                }
+                for(int k = i+1; k < N-2; k++){
+                    max[i] += array2[k];
+                }
+                max[i] = max[i] - array2[i];
+            }
         }
+        System.out.println("max = "+ Arrays.toString(max));
+        Arrays.sort(max);
+        System.out.println("max = "+ Arrays.toString(max));
+        System.out.println("answer = "+ (max[max.length-1] + (honey_box*2)));
 
     }
 
