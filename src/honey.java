@@ -41,7 +41,7 @@ public class honey {
 
         first_bee = first_bee + array[0] - array[array.length-1];
         second_bee = first_bee;
-        for(int i = array.length-1; i < 0; i--){
+        for(int i = array.length-2; i > 0; i--){
             sum = first_bee - array[i];
             second_bee -= array[i];
             sum += second_bee;
