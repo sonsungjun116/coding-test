@@ -23,6 +23,7 @@ public class Row_Column {
         int[][] array_a = new int[R][C];
         int[][] array_b = new int[R][C];
 
+        // count index
         int k = 0;
 
         for(int i = 0; i < R*2; i++) {
@@ -50,6 +51,7 @@ public class Row_Column {
         // 우선 column수는 3으로 가정하고 진행해본다.
 
         int CNT = 0;
+        if(R >= 2 || C >=2) System.out.println("-1");
 
 //        for(int i = 0; i < R; i++){
 //            for(int j = 0; j < C;j++){
