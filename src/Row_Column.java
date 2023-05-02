@@ -70,7 +70,7 @@ public class Row_Column {
         // 배열 검사
         for(int i = 0; i < R ; i++){
             for(int j = 0; j < C; j++){
-                if(array_a[i][j] != array_b[i][j] || j+2 >= C){
+                if(array_a[i][j] != array_b[i][j] || C-j >= 3){
                     CNT++;
                     for(int k = i; k < i+3; k++){
                         for(int n = j; n < j+3; n++){
