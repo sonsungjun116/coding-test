@@ -66,5 +66,20 @@ public class Row_Column {
         System.out.println("array_a = "+Arrays.deepToString(array_a));
         System.out.println("array_b = "+Arrays.deepToString(array_b));
 
+        System.out.println(array_a[0][0]);
+        // 배열 검사
+        for(int i = 0; i < R ; i++){
+            for(int j = 0; j < C; j++){
+                if(array_a[i][j] != array_b[i][j] || j+2 >= C){
+                    CNT++;
+                    for(int k = i; k < i+3; k++){
+                        for(int n = j; n < j+3; n++){
+
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
