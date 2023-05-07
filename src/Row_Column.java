@@ -68,7 +68,7 @@ public class Row_Column {
         // 우선 column수는 3으로 가정하고 진행해본다.
 
         int CNT = 0;
-        if(R >= 2 || C >=2) System.out.println("-1");
+       // if(R >= 2 || C >=2) System.out.println("-1");
 
 //        for(int i = 0; i < R; i++){
 //            for(int j = 0; j < C;j++){
@@ -99,12 +99,15 @@ public class Row_Column {
 //            }
 //        }
 
+        System.out.println("array_a[0][0] = " + array_a[0][0]);
+        System.out.println("array_b[0][0] = " + array_b[0][0]);
         // 행렬 검사 -> 이 경우는 row값 colunm 값이 범위에서 벗어나면 안되므로 -2를 각각 해서 for문으로 순회
         for(int i = 0; i < R-2; i++){
             for(int j = 0; j < C-2; j++){
                 //만약 matrix a 와 matrix b가 틀린 경우
-                if(array_a[i][j] != array_a[i][j]){
+                if(array_a[i][j] != array_b[i][j]){
                     // 행렬 변환 메서드 구현
+                  //  System.out.println("pass");
                     change(i,j);
                     CNT++;
                 }
@@ -120,6 +123,9 @@ public class Row_Column {
             }
         }
 
+        System.out.println("flag = " + flag);
+        System.out.println("R * C = " + R*C);
+        System.out.println("CNT = " + CNT);
         if(flag == R * C){
             System.out.println(CNT);
         }else{
@@ -134,7 +140,7 @@ public class Row_Column {
     // ^ -> 두 비트중 하나는 1이고 다른하나가 0인경우에만 연산결과가 1
     public static void change(int x,int y) {
         for(int i = x; i < x+3; i++){
-            for(int j = y; j < j+3; j++){
+            for(int j = y; j < y+3; j++){
                 array_a[i][j] = array_a[i][j] ^ 1;
             }
         }
