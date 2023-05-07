@@ -178,7 +178,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682350218135</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
+      <created>1683042938820</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683042938820</updated>
+    </task>
+    <task id="LOCAL-00019" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
+      <created>1683043306996</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683043306996</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,8 +228,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Row_Column.java</url>
-          <line>19</line>
+          <line>22</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Row_Column.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
