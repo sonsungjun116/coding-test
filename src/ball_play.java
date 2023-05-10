@@ -101,7 +101,7 @@ public class ball_play {
                     right_blue_cnt++;
                 }
             }
-            // 제일 작은 값을 red_cnt에 대입
+            // 제일 작은 값을 blue_cnt에 대입
             if(left_blue_cnt > right_blue_cnt) blue_cnt = right_blue_cnt;
             else if(left_blue_cnt < right_blue_cnt) blue_cnt = left_blue_cnt;
             else if(left_blue_cnt == right_blue_cnt) blue_cnt = left_blue_cnt;
@@ -109,7 +109,7 @@ public class ball_play {
 
         }
         else if(array[0] == 'B' || array[N-1] == 'B'){
-            //맨왼쪽 배열이 R이고 맨 오른쪽은 R이 아닌경우
+            //맨왼쪽 배열이 B이고 맨 오른쪽은 B가 아닌경우
             if (array[0] == 'B' && array[N-1] != 'B'){
                 for(int i = 0; i < N-1; i++){
                     if(array[i] != array[i+1] && array[i+1] == 'B'){
@@ -117,7 +117,7 @@ public class ball_play {
                     }
                 }
             }
-            //맨왼쪽 배열이 R이 아니고 맨 오른쪽이 R인 경우
+            //맨왼쪽 배열이 B가 아니고 맨 오른쪽이 B인 경우
             else if (array[0] != 'B' && array[N-1] == 'B'){
                 for(int i = N-1 ; i >= 1 ;i--){
                     if(array[i-1] != array[i] && array[i-1] == 'B'){
