@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="그리디 알고리즘 행렬 계산&#10;2023.04.09">
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ball_play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ball_play.java" afterDir="false" />
     </list>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683561086552</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09">
+      <created>1683648472839</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683648472839</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +248,8 @@
     <MESSAGE value="변경테스트" />
     <MESSAGE value="꿀 따기" />
     <MESSAGE value="그리디 알고리즘 행렬 계산&#10;2023.04.09" />
-    <option name="LAST_COMMIT_MESSAGE" value="그리디 알고리즘 행렬 계산&#10;2023.04.09" />
+    <MESSAGE value="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09" />
+    <option name="LAST_COMMIT_MESSAGE" value="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -32,16 +32,35 @@ public class ball_play {
 //        }else if(array[0] == 'R' || array[N-1] == 'R'){
 //
 //        }
-
+        // 입력값이 1인경우
         if(N == 1){
             System.out.println(0);
         }
-
+        //양쪽다 R이 존재하는경우
         if(array[0] == 'R' && array[N-1] == 'R'){
+            int left_red_cnt = 0;
+            int right_red_cnt = 0;
+            // 왼쪽으로 순회하는경우
+            for(int i = 0; i < N-1; i++){
+                if(array[i] != array[i+1] && array[i+1] == 'R'){
+                    left_red_cnt++;
+                }
+            }
+            // 오른쪽으로 순회하는 경우
+            for(int i = N-1 ; i >= 1 ;i--){
+                if(array[i-1] != array[i] && array[i-1] == 'R'){
+                    right_red_cnt++;
+                }
+            }
+            // 제일 작은 값을 red_cnt에 대입
+            if(left_red_cnt > right_red_cnt) red_cnt = right_red_cnt;
+            else if(left_red_cnt < right_red_cnt) red_cnt = left_red_cnt;
+            else if(left_red_cnt == right_red_cnt) red_cnt = left_red_cnt;
+
 
         }
         else if(array[0] == 'R' || array[N-1] == 'R'){
-
+            //맨왼쪽 배열이 R이고 맨 오른쪽은 R이 아닌경우
             if (array[0] == 'R' && array[N-1] != 'R'){
                 for(int i = 0; i < N-1; i++){
                     if(array[i] != array[i+1] && array[i+1] == 'R'){
@@ -49,18 +68,74 @@ public class ball_play {
                     }
                 }
             }
+            //맨왼쪽 배열이 R이 아니고 맨 오른쪽이 R인 경우
             else if (array[0] != 'R' && array[N-1] == 'R'){
-
+                for(int i = N-1 ; i >= 1 ;i--){
+                    if(array[i-1] != array[i] && array[i-1] == 'R'){
+                        red_cnt++;
+                    }
+                }
             }
         }else {
             for(int i = 0; i < N ; i++){
                 if(array[i] == 'R'){
-                    blue_cnt++;
+                    red_cnt++;
                 }
             }
         }
 
         //파란공 검사
+        //양쪽다 B가 존재하는경우
+        if(array[0] == 'B' && array[N-1] == 'B'){
+            int left_blue_cnt = 0;
+            int right_blue_cnt = 0;
+            // 왼쪽으로 순회하는경우
+            for(int i = 0; i < N-1; i++){
+                if(array[i] != array[i+1] && array[i+1] == 'B'){
+                    left_blue_cnt++;
+                }
+            }
+            // 오른쪽으로 순회하는 경우
+            for(int i = N-1 ; i >= 1 ;i--){
+                if(array[i-1] != array[i] && array[i-1] == 'B'){
+                    right_blue_cnt++;
+                }
+            }
+            // 제일 작은 값을 red_cnt에 대입
+            if(left_blue_cnt > right_blue_cnt) blue_cnt = right_blue_cnt;
+            else if(left_blue_cnt < right_blue_cnt) blue_cnt = left_blue_cnt;
+            else if(left_blue_cnt == right_blue_cnt) blue_cnt = left_blue_cnt;
+
+
+        }
+        else if(array[0] == 'B' || array[N-1] == 'B'){
+            //맨왼쪽 배열이 R이고 맨 오른쪽은 R이 아닌경우
+            if (array[0] == 'B' && array[N-1] != 'B'){
+                for(int i = 0; i < N-1; i++){
+                    if(array[i] != array[i+1] && array[i+1] == 'B'){
+                        blue_cnt++;
+                    }
+                }
+            }
+            //맨왼쪽 배열이 R이 아니고 맨 오른쪽이 R인 경우
+            else if (array[0] != 'B' && array[N-1] == 'B'){
+                for(int i = N-1 ; i >= 1 ;i--){
+                    if(array[i-1] != array[i] && array[i-1] == 'B'){
+                        blue_cnt++;
+                    }
+                }
+            }
+        }else {
+            for(int i = 0; i < N ; i++){
+                if(array[i] == 'B'){
+                    blue_cnt++;
+                }
+            }
+        }
+
+        if (red_cnt > blue_cnt) System.out.println("answer = " + blue_cnt);
+        else if(red_cnt < blue_cnt) System.out.println("answer = " + red_cnt);
+        else if(red_cnt == blue_cnt) System.out.println("answer = " + red_cnt);
 
         System.out.println(Arrays.toString(array));
         System.out.println(N);
