@@ -15,7 +15,7 @@ public class ball_play {
         for(int i = 0; i < N; i++){
             array[i] = str.charAt(i);
         }
-
+        
         // 각각 빨간공과 파란공이 모여지는 경우의수를 각각 구하고 그수 를 비교하여 정답을 도출
         // 맨 왼쪽 또는 맨 오른쪽에 공이 있는 것이 기준 방향 1순위
         // 만약 양쪽다 존재한다면 맨 왼쪽이나 맨 오른쪽과 붙어 있는 쪽으로 이동
@@ -27,11 +27,6 @@ public class ball_play {
 
         //빨간공 검사
 
-//        if(array[0] == 'R' && array[N-1] == 'R'){
-//
-//        }else if(array[0] == 'R' || array[N-1] == 'R'){
-//
-//        }
         // 입력값이 1인경우
         if(N == 1){
             System.out.println(0);
@@ -137,8 +132,8 @@ public class ball_play {
         else if(red_cnt < blue_cnt) System.out.println("answer = " + red_cnt);
         else if(red_cnt == blue_cnt) System.out.println("answer = " + red_cnt);
 
-        System.out.println(Arrays.toString(array));
-        System.out.println(N);
-        System.out.println("red_cnt = " + red_cnt);
+        //System.out.println(Arrays.toString(array));
+        //System.out.println(N);
+        //System.out.println("red_cnt = " + red_cnt);
     }
 }
