@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09">
-      <change afterPath="$PROJECT_DIR$/src/switch_and_bulb.java" afterDir="false" />
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ball_play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ball_play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/switch_and_bulb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/switch_and_bulb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683731787948</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1684163050344</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1684163050344</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +270,8 @@
     <MESSAGE value="꿀 따기" />
     <MESSAGE value="그리디 알고리즘 행렬 계산&#10;2023.04.09" />
     <MESSAGE value="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09" />
-    <option name="LAST_COMMIT_MESSAGE" value="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09" />
+    <MESSAGE value="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
