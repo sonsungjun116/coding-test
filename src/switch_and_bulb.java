@@ -64,24 +64,24 @@ public class switch_and_bulb {
                     }else{
                         ss[i][N-2] = 0;
                     }
-                }else if(0 < i && i < N-2){
-//                    if(array[j-1] == 0){
-//                        ss[i][j-1] = 1;
-//                    }else{
-//                        ss[i][j-1] = 0;
-//                    }
-//
-//                    if(array[j] == 0){
-//                        ss[i][j] = 1;
-//                    }else{
-//                        ss[i][j] = 0;
-//                    }
-//
-//                    if(array[j+1] == 0){
-//                        ss[i][j+1] = 1;
-//                    }else{
-//                        ss[i][j+1] = 0;
-//                    }
+                }else {
+
+                    if(array[i-1] == 0){
+                        ss[i][i-1] = 1;
+                    }else {
+                        ss[i][i-1] = 0;
+                    }
+                    if(array[i] == 0){
+                        ss[i][i] = 1;
+                    }else {
+                        ss[i][i] = 0;
+                    }
+                    if(array[i+1] == 0){
+                        ss[i][i+1] = 1;
+                    }else {
+                        ss[i][i+1] = 0;
+                    }
+
 
                 }
             }
