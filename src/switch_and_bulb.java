@@ -34,11 +34,11 @@ public class switch_and_bulb {
 
 
 
-
+        // N의 갯수 만큼 index i 로 각각 한번씩 순회 하여 스위치를 누른 배열 값을 생성
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N ; j++){
-                if (j == 0){
-
+                // index 가 1인경우 -> 1,2만 역수
+                if (i == 0){
                     if(array[0] == 0){
                         ss[i][0] = 1;
                     }else{
@@ -50,7 +50,9 @@ public class switch_and_bulb {
                     }else{
                         ss[i][1] = 0;
                     }
-                }else if(j == N-1){
+                }
+                // index 가 맨 마지막인 경우 -> N,N-1 이지만 for 문 배열에서는 0 부터 시작 하므로
+                else if(i == N-1){
                     if(array[N-1] == 0){
                         ss[i][N-1] = 1;
                     }else{
@@ -62,13 +64,32 @@ public class switch_and_bulb {
                     }else{
                         ss[i][N-2] = 0;
                     }
+                }else if(0 < i && i < N-2){
+//                    if(array[j-1] == 0){
+//                        ss[i][j-1] = 1;
+//                    }else{
+//                        ss[i][j-1] = 0;
+//                    }
+//
+//                    if(array[j] == 0){
+//                        ss[i][j] = 1;
+//                    }else{
+//                        ss[i][j] = 0;
+//                    }
+//
+//                    if(array[j+1] == 0){
+//                        ss[i][j+1] = 1;
+//                    }else{
+//                        ss[i][j+1] = 0;
+//                    }
+
                 }
-                //ss[i][j] =
             }
         }
 
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array2));
+        System.out.println(Arrays.deepToString(ss));
 
 
 
