@@ -32,8 +32,6 @@ public class switch_and_bulb {
 
         int ss[][] = new int[N][N];
 
-
-
         // N의 갯수 만큼 index i 로 각각 한번씩 순회 하여 스위치를 누른 배열 값을 생성
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N ; j++){
@@ -81,15 +79,70 @@ public class switch_and_bulb {
                     }else {
                         ss[i][i+1] = 0;
                     }
-
-
                 }
             }
         }
 
+        int key[][] = new int[N][N];
+        int min = Integer.MAX_VALUE;
+        int count = 0;
+
+        for(int i = 0; i < N; i++){
+            for(int j = 0; j < N; j++) {
+                for (int x = 0; x < N; x++) {
+                    if(i == 0){
+                        if(ss[j][0] == 0){
+                            key[j][0] = 1;
+                        }else{
+                            key[j][0] = 0;
+                        }
+                        if(ss[j][1] == 0){
+                            key[j][1] = 1;
+                        }else{
+                            key[j][1] = 0;
+                        }
+                        key[j][x] = ss[j][x];
+
+                    }else if(i == N-1){
+                        if(key[j][N-1] == 0){
+                            key[j][N-1] = 1;
+                        }else{
+                            key[j][N-1] = 0;
+                        }
+                        if(key[j][N-2] == 0){
+                            key[j][N-2] = 1;
+                        }else{
+                            key[j][N-2] = 0;
+                        }
+                        //key[j][x] = key[j][x];
+                    }else{
+//                        if(){
+//
+//                        }
+                    }
+
+
+
+                    // 바꾸고 ss와 같은지 검사
+                    for (int k = 0; k < N; k++) {
+                        if (ss[i][k] == key[i][k]) {
+
+                        }
+                    }
+
+
+                }
+            }
+            System.out.println(Arrays.deepToString(key));
+            count++;
+        }
+
+
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array2));
         System.out.println(Arrays.deepToString(ss));
+        System.out.println(Arrays.deepToString(key));
+
 
 
 
