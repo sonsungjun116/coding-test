@@ -283,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684677669396</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1684764997278</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1684764997278</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
