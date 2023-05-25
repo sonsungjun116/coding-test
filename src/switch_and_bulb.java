@@ -168,36 +168,37 @@ public class switch_and_bulb {
                         key[j][x] = ss[j][x];
                         //store[j][x] = key[j][x];
 
-                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+//                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }else if(i == N-1){
                         if(key[j][N-1] == 0 && x == 0){
                             key[j][N-1] = 1;
-                        }else{
+                            //System.out.println(Arrays.deepToString(key));
+                        }else if(key[j][N-1] == 1 && x == 0){
                             key[j][N-1] = 0;
                         }if(key[j][N-2] == 0 && x == 0){
                             key[j][N-2] = 1;
-                        }else{
+                        }else if(key[j][N-2] == 1 && x == 0){
                             key[j][N-2] = 0;
                         }
 
-                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+//                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }else{
-                        if(key[j][i-1] == 0){
+                        if(key[j][i-1] == 0 && x == 0){
                             key[j][i-1] = 1;
-                        }else{
+                        }else if(key[j][i-1] == 1 && x == 0){
                             key[j][i-1] = 0;
                         }
-                        if(key[j][i] == 0){
+                        if(key[j][i] == 0 && x == 0){
                             key[j][i] = 1;
-                        }else{
+                        }else if(key[j][i] == 1 && x == 0){
                             key[j][i] = 0;
                         }
-                        if(key[j][i+1] == 0){
+                        if(key[j][i+1] == 0 && x == 0){
                             key[j][i+1] = 1;
-                        }else{
+                        }else if(key[j][i+1] == 1 && x == 0){
                             key[j][i+1] = 0;
                         }
-
+                        //System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }
 
                     // 바꾸고 ss와 같은지 검사
