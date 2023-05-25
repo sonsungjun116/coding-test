@@ -88,69 +88,6 @@ public class switch_and_bulb {
         int min = Integer.MAX_VALUE;
         int count = 0;
         // 경우의 수 순회
-//        for(int i = 0; i < N; i++){
-//            for(int j = 0; j < N; j++) {
-//                for (int x = 0; x < N; x++) {
-//                    if(i == 0){
-//                        if(ss[j][0] == 0){
-//                            key[j][0] = 1;
-//                        }else{
-//                            key[j][0] = 0;
-//                        }
-//                        if(ss[j][1] == 0){
-//                            key[j][1] = 1;
-//                        }else{
-//                            key[j][1] = 0;
-//                        }
-//                        key[j][x] = ss[j][x];
-//
-//                    }else if(i == N-1){
-//                        if(key[j][N-1] == 0){
-//                            key[j][N-1] = 1;
-//                        }else{
-//                            key[j][N-1] = 0;
-//                        }
-//                        if(key[j][N-2] == 0){
-//                            key[j][N-2] = 1;
-//                        }else{
-//                            key[j][N-2] = 0;
-//                        }
-//                        System.out.println(Arrays.deepToString(key));
-//                        //key[j][x] = key[j][x];
-//
-//                    }else{
-//                        if(key[j][i-1] == 0){
-//                            key[j][i-1] = 1;
-//                        }else{
-//                            key[j][i-1] = 0;
-//                        }
-//                        if(key[j][i] == 0){
-//                            key[j][i] = 1;
-//                        }else{
-//                            key[j][i] = 0;
-//                        }
-//                        if(key[j][i+1] == 0){
-//                            key[j][i+1] = 1;
-//                        }else{
-//                            key[j][i+1] = 0;
-//                        }
-//
-//                    }
-//                    // 바꾸고 ss와 같은지 검사
-//                    for (int k = 0; k < N; k++) {
-//                        if (ss[i][k] == key[i][k]) {
-//
-//                        }
-//                    }
-//
-//
-//                }
-//            }
-//            System.out.println("index = "+ i + " -> " + Arrays.deepToString(key));
-//            count++;
-//        }
-
-
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N; j++) {
                 for (int x = 0; x < N; x++) {
@@ -166,8 +103,6 @@ public class switch_and_bulb {
                             key[j][1] = 0;
                         }
                         key[j][x] = ss[j][x];
-                        //store[j][x] = key[j][x];
-
 //                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }else if(i == N-1){
                         if(key[j][N-1] == 0 && x == 0){
@@ -180,7 +115,6 @@ public class switch_and_bulb {
                         }else if(key[j][N-2] == 1 && x == 0){
                             key[j][N-2] = 0;
                         }
-
 //                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }else{
                         if(key[j][i-1] == 0 && x == 0){
@@ -201,25 +135,89 @@ public class switch_and_bulb {
                         //System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }
 
-                    // 바꾸고 ss와 같은지 검사
-                    for (int k = 0; k < N; k++) {
-                        if (ss[i][k] == key[i][k]) {
 
-                        }
+                }
+            }
+            for(int k = 0; k < N; k++){
+                int fun[] = new int[N];
+                for(int y = 0; y < N; y++){
+                    fun[y] = key[k][y];
+                    if(Arrays.equals(fun,array2)){
+                        min = Math.min(min,i+1);
                     }
-
-
                 }
             }
             System.out.println("index = "+ i + " -> " + Arrays.deepToString(key));
             count++;
         }
 
+        // 역수로
+        for(int i = 0; i < N; i++){
+            for(int j = 0; j < N; j++) {
+                for (int x = N-1; x <= 0; x--) {
+                    if(i == N-1){
+                        if(ss[j][N-1] == 0){
+                            key[j][N-1] = 1;
+                        }else{
+                            key[j][N-1] = 0;
+                        }
+                        if(ss[j][N-2] == 0){
+                            key[j][N-2] = 1;
+                        }else{
+                            key[j][N-2] = 0;
+                        }
+                        key[j][x] = ss[j][x];
+//                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+                    }else if(i == 0){
+                        if(key[j][0] == 0 && x == N-1){
+                            key[j][0] = 1;
+                            //System.out.println(Arrays.deepToString(key));
+                        }else if(key[j][0] == 1 && x == N-1){
+                            key[j][0] = 0;
+                        }if(key[j][1] == 0 && x == N-1){
+                            key[j][1] = 1;
+                        }else if(key[j][1] == 1 && x == N-1){
+                            key[j][1] = 0;
+                        }
+//                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+                    }else{
+                        if(key[j][i-1] == 0 && x == N-1){
+                            key[j][i-1] = 1;
+                        }else if(key[j][i-1] == 1 && x == N-1){
+                            key[j][i-1] = 0;
+                        }
+                        if(key[j][i] == 0 && x == N-1){
+                            key[j][i] = 1;
+                        }else if(key[j][i] == 1 && x == N-1){
+                            key[j][i] = 0;
+                        }
+                        if(key[j][i+1] == 0 && x == N-1){
+                            key[j][i+1] = 1;
+                        }else if(key[j][i+1] == 1 && x == N-1){
+                            key[j][i+1] = 0;
+                        }
+                        //System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+                    }
+                }
+            }
+            for(int k = 0; k < N; k++){
+                int fun[] = new int[N];
+                for(int y = 0; y < N; y++){
+                    fun[y] = key[k][y];
+                    if(Arrays.equals(fun,array2)){
+                        min = Math.min(min,i+1);
+                    }
+                }
+            }
+            System.out.println("index = "+ i + " -> " + Arrays.deepToString(key));
+            count++;
+        }
 
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(array2));
         System.out.println(Arrays.deepToString(ss));
         System.out.println("store = " + Arrays.deepToString(store));
+        System.out.println("min = " + min);
 
 
     }
