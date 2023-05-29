@@ -155,36 +155,38 @@ public class switch_and_bulb {
         key = new int[N][N];
         System.out.println(Arrays.deepToString(key));
         // 역수로
-        for(int i = 0; i < N; i++){
+        for(int i = 0; i < N-1; i++){
             for(int j = 0; j < N; j++) {
-                for (int x = N-1; x >= 0; x--) {
+                for (int x = N - 1; x >= 0; x--) {
 //                    System.out.println("pass");
-                    if(i == 0){
-                        if(ss[j][N-1] == 0){
-                            key[j][N-1] = 1;
-                        }else{
-                            key[j][N-1] = 0;
+                    if (i == 0) {
+                        if (ss[j][N - 1] == 0) {
+                            key[j][N - 1] = 1;
+                        } else {
+                            key[j][N - 1] = 0;
                         }
-                        if(ss[j][N-2] == 0){
-                            key[j][N-2] = 1;
-                        }else{
-                            key[j][N-2] = 0;
+                        if (ss[j][N - 2] == 0) {
+                            key[j][N - 2] = 1;
+                        } else {
+                            key[j][N - 2] = 0;
                         }
                         key[j][x] = ss[j][x];
-                       // System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
-                    }else if(i == N-1){
-                        if(key[j][0] == 0 && x == N-1){
+                        // System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+                    } else if (i == N - 1) {
+                        if (key[j][0] == 0 && x == N - 1) {
                             key[j][0] = 1;
-                         //   System.out.println(Arrays.deepToString(key));
-                        }else if(key[j][0] == 1 && x == N-1){
+                            //   System.out.println(Arrays.deepToString(key));
+                        } else if (key[j][0] == 1 && x == N - 1) {
                             key[j][0] = 0;
-                        }if(key[j][1] == 0 && x == N-1){
+                        }
+                        if (key[j][1] == 0 && x == N - 1) {
                             key[j][1] = 1;
-                        }else if(key[j][1] == 1 && x == N-1){
+                        } else if (key[j][1] == 1 && x == N - 1) {
                             key[j][1] = 0;
                         }
-//                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
-                    }else if (x > 0 && x < N-1){
+                        System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+                    }
+                    else if (x > 0 && x < N-1){
                         if(key[j][x-1] == 0 && x == N-2){
                             key[j][x-1] = 1;
                         }else if(key[j][x-1] == 1 && x == N-2){
@@ -202,7 +204,26 @@ public class switch_and_bulb {
                         }
                         System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
                     }
-                }
+//                        else if(i > 0 && i < N-1) {
+//                            if (key[j][i - 1] == 0 && x == N - 1) {
+//                                key[j][i - 1] = 1;
+//                            } else if (key[j][i - 1] == 1 && x == N - 1) {
+//                                key[j][i - 1] = 0;
+//                            }
+//                            if (key[j][i] == 0 && x == N - 1) {
+//                                key[j][i] = 1;
+//                            } else if (key[j][i] == 1 && x == N - 1) {
+//                                key[j][i] = 0;
+//                            }
+//                            if (key[j][i + 1] == 0 && x == N - 1) {
+//                                key[j][i + 1] = 1;
+//                            } else if (key[j][i + 1] == 1 && x == N - 1) {
+//                                key[j][i + 1] = 0;
+//                            }
+//                            System.out.println("key = " + "i = " + i + ", " + "j = " + j + ", " + "x = " + x + " " + Arrays.deepToString(key));
+//                        }
+                    }
+
             }
             for(int k = 0; k < N; k++){
                 int fun[] = new int[N];
