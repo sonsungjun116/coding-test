@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
+      <change afterPath="$PROJECT_DIR$/src/switch_and_bulb2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/switch_and_bulb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/switch_and_bulb.java" afterDir="false" />
     </list>
@@ -318,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685377754383</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1685379710470</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1685379710470</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
