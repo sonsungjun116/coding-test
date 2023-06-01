@@ -20,7 +20,7 @@ public class switch_and_bulb2 {
         int start[] = new int[N];
         int goal[] = new int[N];
         int toy[] = new int[N];
-        int answer = 0;
+        int answer = Integer.MAX_VALUE;
         int cnt = 0;
 
         String a = br.readLine();
@@ -80,13 +80,15 @@ public class switch_and_bulb2 {
 
         if(Arrays.equals(toy,goal)){
             System.out.println("정답 도출");
+            answer = Math.min(cnt,answer);
         }else{
             System.out.println("실패");
         }
 
-        answer = Math.min(cnt,answer);
+        cnt = 0;
+
         // 첫번째 불을 안킨 경우
-        for(int i = 0 ; i < N-1; i++ ){
+        for(int i = 0 ; i < N; i++ ){
             toy[i] = start[i];
         }
         System.out.println("초기화된 배열값"+ Arrays.toString(toy));
@@ -115,11 +117,28 @@ public class switch_and_bulb2 {
             }
             System.out.println("index = "+i + " toy = " +Arrays.toString(toy));
         }
+        if(Arrays.equals(toy,goal) == false){
+            if(toy[N-2] == 0){
+                toy[N-2] = 1;
+            }
+            else if(toy[N-2] == 1){
+                toy[N-2] = 0;
+            }
+            if(toy[N-1] == 0){
+                toy[N-1] = 1;
+            }
+            else if(toy[N-1] == 1){
+                toy[N-1] = 0;
+            }
+            cnt++;
+        }
 
         if(Arrays.equals(toy,goal)){
             System.out.println("정답 도출");
+            answer = Math.min(cnt,answer);
         }else{
             System.out.println("실패");
+
         }
         answer = Math.min(cnt,answer);
         System.out.println("answer = "+answer);
