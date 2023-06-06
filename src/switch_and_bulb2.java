@@ -74,17 +74,31 @@ public class switch_and_bulb2 {
                 cnt++;
             }
         }
-
-
-        System.out.println(cnt);
-        System.out.println("toy = "+Arrays.toString(toy));
+        if(Arrays.equals(toy,goal) == false){
+            if(toy[N-2] == 0){
+                toy[N-2] = 1;
+            }
+            else if(toy[N-2] == 1){
+                toy[N-2] = 0;
+            }
+            if(toy[N-1] == 0){
+                toy[N-1] = 1;
+            }
+            else if(toy[N-1] == 1){
+                toy[N-1] = 0;
+            }
+            cnt++;
+        }
 
         if(Arrays.equals(toy,goal)){
             System.out.println("정답 도출");
+            cnt++;
             answer = Math.min(cnt,answer);
         }else{
             System.out.println("실패");
         }
+        System.out.println(cnt);
+        System.out.println("toy = "+Arrays.toString(toy));
 
         cnt = 0;
 
@@ -141,7 +155,7 @@ public class switch_and_bulb2 {
             System.out.println("실패");
 
         }
-        answer = Math.min(cnt,answer);
+      //  answer = Math.min(cnt,answer);
         System.out.println("answer = "+answer);
 
     }
