@@ -36,13 +36,18 @@ public class multitap{
         for(int i =0; i < K; i++){
             elect_product[i] = Integer.parseInt(st.nextToken());
         }
+        for(int i = 0; i < N; i++){
+            multitap_hole[i] = elect_product[i];
+        }
+        //if(elect_product[N]==)
 
 //            for(int i = 0 ; i < K; i++){
 //                System.out.println("i = "+i);
 //                st = new StringTokenizer(br.readLine(), " ");
 //                elect_product[i] = Integer.parseInt(st.nextToken());
 //            }
-            System.out.println(Arrays.toString(elect_product));
+            System.out.println("elect_product = "+Arrays.toString(elect_product));
+            System.out.println("multitap_hole = "+Arrays.toString(multitap_hole));
 
       //  st = new StringTokenizer(br.readLine()," ");
 
