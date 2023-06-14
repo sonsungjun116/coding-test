@@ -10,7 +10,8 @@ public class multitap{
 
         int N = 0;
         int K = 0;
-
+        int cnt = 0;
+        int compare = 0;
         // 1. 콘센트의 수 인 N개의 크기 배열에 K개의 숫자 번호를 넣고 N+1번째 인덱스의 값이 배열에 있는지 확인
         // -> 해당 배열안에 N+1 인덱스의 값이 존재한다면 pass
 
@@ -27,6 +28,7 @@ public class multitap{
 
         int multitap_hole[] = new int[N];
         int elect_product[] = new int[K];
+        int compare_array[] = new int[N];
 
         System.out.println("N = " + N);
         System.out.println("K = " + K);
@@ -39,7 +41,22 @@ public class multitap{
         for(int i = 0; i < N; i++){
             multitap_hole[i] = elect_product[i];
         }
-        //if(elect_product[N]==)
+
+        for(int i = N; i < K-1; i++){
+            for(int j = 0; j < N; j++){
+                if(elect_product[i] == multitap_hole[j]){
+                    continue;
+                }
+
+            }
+            //여기까지 왔다는건 multitap_hole에 있는 값들중 같은것이 하나도 없다는 것
+            compare = elect_product[i];
+            // 그러나 총 elect_product수를 고민해야함
+            for(int k = i+1; k < i+1+N; k++){
+                compare_array[k] = elect_product[k];
+            }
+            cnt++;
+        }
 
 //            for(int i = 0 ; i < K; i++){
 //                System.out.println("i = "+i);
