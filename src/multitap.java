@@ -52,8 +52,12 @@ public class multitap{
             //여기까지 왔다는건 multitap_hole에 있는 값들중 같은것이 하나도 없다는 것
             compare = elect_product[i];
             // 그러나 총 elect_product수를 고민해야함
-            for(int k = i+1; k < i+1+N; k++){
-                compare_array[k] = elect_product[k];
+            if(N <= K-1-i) {
+                for (int k = i + 1; k < i + 1 + N; k++) {
+                    compare_array[k] = elect_product[k];
+                }
+            }else{
+
             }
             cnt++;
         }
