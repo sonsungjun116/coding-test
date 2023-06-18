@@ -58,7 +58,7 @@ public class multitap{
                     compare_array[k] = elect_product[k];
                 }
             }else{
-
+                    compare_array2 = new ArrayList<>(K-1-i);
             }
             cnt++;
         }
