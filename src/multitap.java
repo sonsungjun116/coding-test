@@ -29,6 +29,7 @@ public class multitap{
         int multitap_hole[] = new int[N];
         int elect_product[] = new int[K];
         int compare_array[] = new int[N];
+        ArrayList<Integer> compare_array2 = new ArrayList<Integer>(N);
 
         System.out.println("N = " + N);
         System.out.println("K = " + K);
