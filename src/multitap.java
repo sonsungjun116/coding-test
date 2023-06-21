@@ -29,7 +29,7 @@ public class multitap{
         int multitap_hole[] = new int[N];
         int elect_product[] = new int[K];
         int compare_array[] = new int[N];
-        ArrayList<Integer> compare_array2 = new ArrayList<Integer>(N);
+        ArrayList<Integer> compare_array2 = new ArrayList<>(N);
 
         System.out.println("N = " + N);
         System.out.println("K = " + K);
@@ -55,7 +55,8 @@ public class multitap{
             // 그러나 총 elect_product수를 고민해야함
             if(N <= K-1-i) {
                 for (int k = i + 1; k < i + 1 + N; k++) {
-                    compare_array[k] = elect_product[k];
+//                    compare_array[k] = elect_product[k];
+                    compare_array2.add(elect_product[k]);
                 }
             }else{
                     compare_array2 = new ArrayList<>(K-1-i);
