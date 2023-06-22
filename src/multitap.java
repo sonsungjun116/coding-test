@@ -57,27 +57,56 @@ public class multitap{
             // 남아있는 배열의 수가 N개보다 크거나 같을때 -> 비교대상 배열의 갯수를 N개로 지정
             if(N <= K-1-i) {
                 // N개만큼 배열에 삽입
+                System.out.println("level 1");
                 for (int k = i + 1; k < i + 1 + N; k++) {
 //                    compare_array[k] = elect_product[k];
                     compare_array.add(elect_product[k]);
                 }
+                System.out.println("level 1-1 -> compare_array = " + compare_array);
                 // 비교 배열과 멀티탭에 끼워진 값들의 배열과 비교
                 for(int k = 0; k < N; k++){
                     for(int j = 0; j < N; j++){
                         if(multitap_hole[k] == compare_array.get(j)){
                             duplicate_array.add(compare_array.get(j));
+
+                        }
+                    }
+                }
+                // duplicate_array 과 multitap_hole를 비교해서 중복되지 않는 녀석중 가장 빠른 index의 배열 값을교체
+                loop:
+                for(int k = 0; k < N; k++){
+                    for(int j = 0; j < duplicate_array.size(); j++){
+                        if(multitap_hole[k] != duplicate_array.get(j)){
+                            multitap_hole[k] = compare;
+                            break loop;
                         }
                     }
                 }
 
+                System.out.println("level 1-2 -> duplicate_array = " + duplicate_array);
+                System.out.println("multitap_hole = " + Arrays.toString(multitap_hole));
+                duplicate_array = new ArrayList<>();
+                compare_array = new ArrayList<>();
             }
-            // 남은 배열의 수가 N개보다 작은 경
-            else{
-                for (int k = i+1; k < N; k++) {
+            // 남은 배열의 수가 N개보다 작은 경우
+            else if(N > K-1-i){
+                System.out.println("level 2");
+                for (int k = i+1; k < K; k++) {
                     compare_array.add(elect_product[k]);
                 }
+                System.out.println("level 2-1 -> compare_array = " + compare_array);
+                for(int k = 0; k < N; k++) {
+                    for (int j = 0; j < compare_array.size(); j++) {
+                        if(multitap_hole[k] == compare_array.get(j)){
+                            duplicate_array.add(compare_array.get(j));
+                        }
+                    }
+                }
+                System.out.println("level 2-2 -> duplicate_array = " + duplicate_array);
+                duplicate_array = new ArrayList<>();
+                compare_array = new ArrayList<>();
             }
-            cnt++;
+            compare = 0;
         }
 
 //            for(int i = 0 ; i < K; i++){
@@ -87,6 +116,7 @@ public class multitap{
 //            }
             System.out.println("elect_product = "+Arrays.toString(elect_product));
             System.out.println("multitap_hole = "+Arrays.toString(multitap_hole));
+            System.out.println("duplicate_array = "+duplicate_array);
 
       //  st = new StringTokenizer(br.readLine()," ");
 
