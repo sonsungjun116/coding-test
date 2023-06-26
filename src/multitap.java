@@ -78,6 +78,7 @@ public class multitap{
                     for(int j = 0; j < duplicate_array.size(); j++){
                         if(multitap_hole[k] != duplicate_array.get(j)){
                             multitap_hole[k] = compare;
+                            cnt++;
                             break loop;
                         }
                     }
@@ -102,7 +103,10 @@ public class multitap{
                         }
                     }
                 }
+
+
                 System.out.println("level 2-2 -> duplicate_array = " + duplicate_array);
+                System.out.println("multitap_hole = " + Arrays.toString(multitap_hole));
                 duplicate_array = new ArrayList<>();
                 compare_array = new ArrayList<>();
             }
