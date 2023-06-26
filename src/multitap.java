@@ -12,6 +12,7 @@ public class multitap{
         int K = 0;
         int cnt = 0;
         int compare = 0;
+        int flag = 0;
         // 1. 콘센트의 수 인 N개의 크기 배열에 K개의 숫자 번호를 넣고 N+1번째 인덱스의 값이 배열에 있는지 확인
         // -> 해당 배열안에 N+1 인덱스의 값이 존재한다면 pass
 
@@ -73,15 +74,21 @@ public class multitap{
                     }
                 }
                 // duplicate_array 과 multitap_hole를 비교해서 중복되지 않는 녀석중 가장 빠른 index의 배열 값을교체
-                loop:
+               // loop:
                 for(int k = 0; k < N; k++){
                     for(int j = 0; j < duplicate_array.size(); j++){
-                        if(multitap_hole[k] != duplicate_array.get(j)){
-                            multitap_hole[k] = compare;
-                            cnt++;
-                            break loop;
+                        if(multitap_hole[k] == duplicate_array.get(j)){
+                            flag = 1;
+                            //multitap_hole[k] = compare;
+                            //cnt++;
+                            //break loop;
                         }
                     }
+                    if(flag == 0){
+                        multitap_hole[k] = compare;
+                        cnt++;
+                    }
+                    flag = 0;
                 }
 
                 System.out.println("level 1-2 -> duplicate_array = " + duplicate_array);
@@ -103,7 +110,22 @@ public class multitap{
                         }
                     }
                 }
-
+                //loop:
+                for(int k = 0; k < N; k++){
+                    for(int j = 0; j < duplicate_array.size(); j++){
+                        if(multitap_hole[k] == duplicate_array.get(j)){
+                            flag = 1;
+                            //multitap_hole[k] = compare;
+                            //cnt++;
+                           // break loop;
+                        }
+                    }
+                    if(flag == 0){
+                        multitap_hole[k] = compare;
+                        cnt++;
+                    }
+                    flag = 0;
+                }
 
                 System.out.println("level 2-2 -> duplicate_array = " + duplicate_array);
                 System.out.println("multitap_hole = " + Arrays.toString(multitap_hole));
@@ -121,6 +143,7 @@ public class multitap{
             System.out.println("elect_product = "+Arrays.toString(elect_product));
             System.out.println("multitap_hole = "+Arrays.toString(multitap_hole));
             System.out.println("duplicate_array = "+duplicate_array);
+            System.out.println("cnt = "+ cnt+1);
 
       //  st = new StringTokenizer(br.readLine()," ");
 
@@ -129,7 +152,16 @@ public class multitap{
 //            System.out.println("st.nextToken() : " + st.nextToken());
 //        }
 
-
+//        loop:
+//        for(int k = 0; k < N; k++){
+//            for(int j = 0; j < duplicate_array.size(); j++){
+//                if(multitap_hole[k] != duplicate_array.get(j)){
+//                    multitap_hole[k] = compare;
+//                    cnt++;
+//                    break loop;
+//                }
+//            }
+//        }
 
     }
 }
