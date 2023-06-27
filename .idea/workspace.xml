@@ -59,13 +59,6 @@
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
     </task>
-    <task id="LOCAL-00010" summary="꿀 따기">
-      <created>1680621661652</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1680621661652</updated>
-    </task>
     <task id="LOCAL-00011" summary="꿀 따기">
       <created>1681027966954</created>
       <option name="number" value="00011" />
@@ -402,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687791179581</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1687794096508</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1687794096508</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

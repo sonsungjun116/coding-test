@@ -93,6 +93,7 @@ public class multitap{
 
                 System.out.println("level 1-2 -> duplicate_array = " + duplicate_array);
                 System.out.println("multitap_hole = " + Arrays.toString(multitap_hole));
+                System.out.println("compare = " + compare);
                 duplicate_array = new ArrayList<>();
                 compare_array = new ArrayList<>();
             }
@@ -129,6 +130,7 @@ public class multitap{
 
                 System.out.println("level 2-2 -> duplicate_array = " + duplicate_array);
                 System.out.println("multitap_hole = " + Arrays.toString(multitap_hole));
+                System.out.println("compare = " + compare);
                 duplicate_array = new ArrayList<>();
                 compare_array = new ArrayList<>();
             }
