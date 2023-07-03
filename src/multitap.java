@@ -95,6 +95,7 @@ public class multitap{
                         if(multitap_hole.get(k) != duplicate_array.get(j)){
                             multitap_hole.set(k,compare);
                             cnt++;
+
                             break loop;
                         }
                     }
@@ -129,9 +130,14 @@ public class multitap{
                         if(multitap_hole.get(k) != duplicate_array.get(j)){
                             multitap_hole.set(k,compare);
                             cnt++;
+                            System.out.println("cnt = "+ cnt);
                             break loop;
                         }
                     }
+                }
+                if(duplicate_array.size() == 0){
+                    multitap_hole.set(0,compare);
+                    cnt++;
                 }
 
                 System.out.println("level 2-2 -> duplicate_array = " + duplicate_array);
@@ -151,7 +157,7 @@ public class multitap{
             System.out.println("elect_product = "+ elect_product);
             System.out.println("multitap_hole = "+ multitap_hole);
             System.out.println("duplicate_array = "+ duplicate_array);
-            System.out.println("cnt = "+ cnt+1);
+            System.out.println("cnt = "+ cnt);
 
       //  st = new StringTokenizer(br.readLine()," ");
 
