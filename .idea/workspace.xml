@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multitap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multitap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00015" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
-      <created>1681036261082</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1681036261082</updated>
     </task>
     <task id="LOCAL-00016" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
       <created>1682258619628</created>
@@ -402,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688395715484</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1688398930624</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1688398930624</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
