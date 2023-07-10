@@ -27,8 +27,7 @@ public class multitap{
             K = Integer.parseInt(st.nextToken());
         }
 
-//        int multitap_hole[] = new int[N];
-//        int elect_product[] = new int[K];
+
         ArrayList<Integer> multitap_hole = new ArrayList<>();
         ArrayList<Integer> elect_product = new ArrayList<>();
         ArrayList<Integer> compare_array = new ArrayList<>(N);
