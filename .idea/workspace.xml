@@ -58,20 +58,6 @@
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
     </task>
-    <task id="LOCAL-00016" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
-      <created>1682258619628</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1682258619628</updated>
-    </task>
-    <task id="LOCAL-00017" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
-      <created>1682350218135</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1682350218135</updated>
-    </task>
     <task id="LOCAL-00018" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
       <created>1683042938820</created>
       <option name="number" value="00018" />
@@ -401,7 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688398930624</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1688570892962</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1688570892962</updated>
+    </task>
+    <task id="LOCAL-00066" summary="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16">
+      <created>1689004053225</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1689004053225</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
