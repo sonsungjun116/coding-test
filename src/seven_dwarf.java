@@ -10,6 +10,7 @@ public class seven_dwarf {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
+        int sum = 0;
         // 백설공주 난쟁이 문제
 
         // 완전 탐색 알고리즘
@@ -27,14 +28,44 @@ public class seven_dwarf {
         // 2-2 100보다 큰 경우
             // 합계에서 100을 빼고 어떠한 배열을 바꾸면 그 넘치는 숫자만큼 차감 할 수 있는지 확인
 
-        int input_array[] = new int[9];
-        int seven_dwarf_array[] = new int[7];
+
+        int input_array[] = new int[9]; // 처음 값을 입력받는 배열
+        int seven_dwarf_array[] = new int[7];   // 9개의 입력값중 7개의 값을 선정
+        int remain_array[] = new int[2]; // 나머지 선정되지 않은 2개의 값
 
         for (int i = 0; i < input_array.length; i++) {
             input_array[i] = Integer.parseInt(br.readLine());
         }
         Arrays.sort(input_array);
 
-        System.out.println(Arrays.toString(input_array));
+        System.out.println("input_array = " + Arrays.toString(input_array));
+
+        for(int i = 0; i < input_array.length; i++) {
+            if(i < 7) {
+                seven_dwarf_array[i] = input_array[i];
+            }else {
+                remain_array[i-7] = input_array[i];
+            }
+        }
+
+        System.out.println("seven_dwarf_array = " + Arrays.toString(seven_dwarf_array));
+        System.out.println("remain_array = " + Arrays.toString(remain_array));
+
+        sum = Arrays.stream(seven_dwarf_array).sum();
+
+        System.out.println("sum = " + sum);
+
+        if(sum == 100){
+            System.out.println("answer = " + Arrays.toString(seven_dwarf_array));
+        }else if (sum < 100){
+
+        }else if (sum > 100){
+
+        }
+
+
+
+
     }
 }
+
