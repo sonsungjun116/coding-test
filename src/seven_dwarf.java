@@ -1,3 +1,4 @@
+import javax.sound.midi.SysexMessage;
 import java.io.*;
 import java.util.*;
 
@@ -11,6 +12,8 @@ public class seven_dwarf {
         StringTokenizer st;
 
         int sum = 0;
+        int difference;
+        int compare = 0;
         // 백설공주 난쟁이 문제
 
         // 완전 탐색 알고리즘
@@ -55,9 +58,32 @@ public class seven_dwarf {
 
         System.out.println("sum = " + sum);
 
+        loop:
         if(sum == 100){
             System.out.println("answer = " + Arrays.toString(seven_dwarf_array));
-        }else if (sum < 100){
+        }else if (sum < 100){ // 합계가 100이하라면
+            difference = 100 - sum;
+            // remain_array 배열의 첫번째 요소 교환
+            for(int i = 0; i < seven_dwarf_array.length; i++){
+                int sum_value = (sum - seven_dwarf_array[i]) + remain_array[0];
+                if(sum_value == 100) {
+                    seven_dwarf_array[i] = remain_array[0];
+                    System.out.println("answer = " + Arrays.toString(seven_dwarf_array));
+                    break loop;
+                }
+            }
+            // remain_array 배열의 두번째 요소 교환
+            for(int i = 0; i < seven_dwarf_array.length; i++){
+                int sum_value = (sum - seven_dwarf_array[i]) + remain_array[1];
+                if(sum_value == 100) {
+                    seven_dwarf_array[i] = remain_array[1];
+                    System.out.println("answer = " + Arrays.toString(seven_dwarf_array));
+                    break loop;
+                }
+            }
+            // 두개의 remain_array 배열의 요소를 삽입하여 도출
+
+
 
         }else if (sum > 100){
 
