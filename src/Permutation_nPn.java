@@ -12,7 +12,10 @@ public class Permutation_nPn {
         // 기저조건
             if(idx == N) {
                 tc++;
-                System.out.println(Arrays.toString(numbers));
+//                System.out.println(tc);
+                System.out.println("answer = "+ Arrays.toString(numbers));
+//                System.out.println(Arrays.toString(selected));
+
                 return;
             }
 
@@ -23,9 +26,10 @@ public class Permutation_nPn {
                 // 중복되지 않는 경우
                 numbers[idx] = i;
                 selected[i] = true;
+                System.out.println("numbers = " + Arrays.toString(numbers));
+                System.out.println("selected = " + Arrays.toString(selected));
                 permutation(idx+1); // 다음 요소 뽑기
                 selected[i] = false;
-
             }
     }
     public static void main(String[] args){
@@ -39,3 +43,13 @@ public class Permutation_nPn {
 
 
 }
+// numbers[0] = 1,
+// selected[1] = true;
+// permutation(1)
+// numbers[1] = 2;
+// selected[2] = true;
+// permutation(2)
+// numbers[2] = 3;
+// selected[3] = true;
+// permutation(3);
+// if(3 == 3) ->

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.08.06&#10;일곱 난쟁이">
-      <change afterPath="$PROJECT_DIR$/src/Permutation_nPn.java" afterDir="false" />
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.08.16&#10;순열">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seven_dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/seven_dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Permutation_nPn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Permutation_nPn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,14 @@
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Permutation_nPn">
+    <configuration name="Permutation_nPn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Permutation_nPn" />
+      <module name="sontest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Row_Column" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Row_Column" />
       <module name="sontest" />
@@ -47,6 +53,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Permutation_nPn" />
         <item itemvalue="Application.Row_Column" />
       </list>
     </recent_temporary>
@@ -59,20 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00022" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
-      <created>1683557236047</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1683557236047</updated>
-    </task>
-    <task id="LOCAL-00023" summary="그리디 알고리즘 행렬 계산&#10;2023.04.09">
-      <created>1683561086552</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1683561086552</updated>
     </task>
     <task id="LOCAL-00024" summary="17615번 볼 모으기&#10;그리디 알고리즘&#10;2023.05.09">
       <created>1683648472839</created>
@@ -403,7 +396,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691675779892</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="완전 탐색 알고리즘&#10;2023.08.06&#10;일곱 난쟁이">
+      <created>1692197797966</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1692197797966</updated>
+    </task>
+    <task id="LOCAL-00072" summary="완전 탐색 알고리즘&#10;2023.08.16&#10;순열">
+      <created>1692197819348</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1692197819348</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +435,8 @@
     <MESSAGE value="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16" />
     <MESSAGE value="1700 멀티 스케줄링&#10;그리디 알고리즘&#10;2023.05.16" />
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.08.06&#10;일곱 난쟁이" />
-    <option name="LAST_COMMIT_MESSAGE" value="완전 탐색 알고리즘&#10;2023.08.06&#10;일곱 난쟁이" />
+    <MESSAGE value="완전 탐색 알고리즘&#10;2023.08.16&#10;순열" />
+    <option name="LAST_COMMIT_MESSAGE" value="완전 탐색 알고리즘&#10;2023.08.16&#10;순열" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,6 +458,11 @@
           <url>file://$PROJECT_DIR$/src/Row_Column.java</url>
           <line>36</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
