@@ -83,9 +83,23 @@ public class seven_dwarf {
             }
             // 두개의 remain_array 배열의 요소를 삽입하여 도출
 
+            // 초기 교환 인덱스
+            int index1 = 0;
+            int index2 = 1;
+            // 비교 배열 생성
+            int compare_array[] = new int[7];
+            // seven_dwarf_array 배열값 복사
+            System.arraycopy(seven_dwarf_array,0,compare_array,0,seven_dwarf_array.length);
+            System.out.println("compare array = " + Arrays.toString(compare_array));
+            for(int i = 0; i < seven_dwarf_array.length; i++){
 
 
-        }else if (sum > 100){
+
+            }
+
+
+
+        }else if (sum > 100){ //합계가 100 이상이라면
 
         }
 
