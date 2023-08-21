@@ -14,7 +14,7 @@ public class Permutation_nPn {
                 tc++;
 //                System.out.println(tc);
                 System.out.println("answer = "+ Arrays.toString(numbers));
-//                System.out.println(Arrays.toString(selected));
+                System.out.println("answer = " + Arrays.toString(selected));
 
                 return;
             }
