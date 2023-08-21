@@ -12,12 +12,13 @@ public class Permutation_nPn {
         // 기저조건
             if(idx == N) {
                 tc++;
-//                System.out.println(tc);
-                System.out.println("answer = "+ Arrays.toString(numbers));
-                System.out.println("answer = " + Arrays.toString(selected));
+////                System.out.println(tc);
+//                System.out.println("answer = "+ Arrays.toString(numbers));
+//                System.out.println("answer = " + Arrays.toString(selected));
 
                 return;
             }
+
 
             for(int i = 1; i <= N; i++){
                 // 중복 검사 (이미 뽑은 경우 넘어감)
