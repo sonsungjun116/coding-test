@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.08.16&#10;순열">
+      <change afterPath="$PROJECT_DIR$/src/Eureka.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seven_dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/seven_dwarf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +66,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00030" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
-      <created>1684424891250</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1684424891250</updated>
     </task>
     <task id="LOCAL-00031" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
       <created>1684677299415</created>
@@ -410,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693146323419</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="완전 탐색 알고리즘&#10;2023.08.16&#10;순열">
+      <created>1693728296594</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1693728296594</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,11 +478,6 @@
           <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
           <line>36</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
@@ -593,6 +588,11 @@
           <url>file://$PROJECT_DIR$/src/permutation_practice.java</url>
           <line>32</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Permutation2.java</url>
