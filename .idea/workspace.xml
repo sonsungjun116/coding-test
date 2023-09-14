@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eureka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eureka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +65,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00033" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
-      <created>1684764997278</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1684764997278</updated>
     </task>
     <task id="LOCAL-00034" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
       <created>1684854033524</created>
@@ -410,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694274213182</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수">
+      <created>1694444252785</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1694444252785</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
