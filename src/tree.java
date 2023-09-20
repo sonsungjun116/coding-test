@@ -23,7 +23,9 @@ public class tree {
         System.out.println("array value = "+ Arrays.deepToString(input_array));
 
         // N * N 크기의 배열을 4등분으로 나누어 전체가 1인지 0인지 섞여있는지를 판별
-        // (N/2) * (N/2)
+        // (N/2) * (N/2) -> 0이나 1로 나뉘어지면 멈추고 1과0이 섞여있다면 계속해서 판별
+
+
 
 
 

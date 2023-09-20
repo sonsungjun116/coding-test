@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수" />
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리">
+      <change beforePath="$PROJECT_DIR$/src/tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,13 +65,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00037" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
-      <created>1685377754383</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1685377754383</updated>
     </task>
     <task id="LOCAL-00038" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
       <created>1685379710470</created>
@@ -407,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695222310958</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리">
+      <created>1695222378356</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1695222378356</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,7 +436,8 @@
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.08.06&#10;일곱 난쟁이" />
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.08.16&#10;순열" />
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수" />
-    <option name="LAST_COMMIT_MESSAGE" value="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수" />
+    <MESSAGE value="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리" />
+    <option name="LAST_COMMIT_MESSAGE" value="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
