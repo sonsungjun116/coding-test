@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리">
-      <change afterPath="$PROJECT_DIR$/src/stack_q_3.java" afterDir="false" />
+    <list default="true" id="2350aa4b-d4b4-4c9c-9da3-ec723b3df85a" name="Changes" comment="스택 큐&#10;2023.10.20">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack_q_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_q_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673160263644</updated>
-    </task>
-    <task id="LOCAL-00039" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
-      <created>1685459113497</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1685459113497</updated>
     </task>
     <task id="LOCAL-00040" summary="2138 전구와 스위치&#10;그리디 알고리즘&#10;2023.05.16">
       <created>1685549787147</created>
@@ -419,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695222741589</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="스택 큐&#10;2023.10.20">
+      <created>1697728340061</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1697728340062</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,7 +447,8 @@
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.08.16&#10;순열" />
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.09.03&#10;삼각수" />
     <MESSAGE value="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리" />
-    <option name="LAST_COMMIT_MESSAGE" value="완전 탐색 알고리즘&#10;2023.09.21&#10;쿼드트리" />
+    <MESSAGE value="스택 큐&#10;2023.10.20" />
+    <option name="LAST_COMMIT_MESSAGE" value="스택 큐&#10;2023.10.20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,6 +605,16 @@
           <url>file://$PROJECT_DIR$/src/Permutation_nPn.java</url>
           <line>31</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack_q_3.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/stack_q_3.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Permutation2.java</url>
